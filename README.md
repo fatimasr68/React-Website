@@ -1,5 +1,5 @@
 # UI Design with Figma
-<p>
+<p style="vertical-alignment: top;">
   <img src="UI/HomePage.png" title="Design" width="450" style="display: inline-block; margin: 0 auto; max-width: 450px; vertical-align:top;">
   <img src="UI/CourseList.png" title="Design" width="450" style="display: inline-block; margin: 0 auto; max-width: 450px; vertical-align:top;">
   <img src="UI/CourseDetail.png" title="Design" width="450" style="display: inline-block; margin: 0 auto; max-width: 450px; vertical-align:top;">
