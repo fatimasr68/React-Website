@@ -1,7 +1,7 @@
 # UI Design with Figma
 
 <div align="center">
-  <div style="display: flex; align-items: flex-start;">
+  <div>
        
       <img src="UI/HomePage.png" title="Design" width="450" style="display: inline-block; margin: 0 auto; max-width: 450px; vertical-align:top;">
 
