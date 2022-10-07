@@ -1,0 +1,14 @@
+.student-courses-area {
+    overflow: hidden;
+    background-color: #EEF5F9;
+}
+
+.student-courses-area .panel-sidebar ul li:nth-child(3) a {
+    background-color: #fff;
+    color: #777;
+}
+
+.student-courses-area .courses-table th.add-course,
+.student-courses-area .courses-table td.add-course {
+    display: none;
+}

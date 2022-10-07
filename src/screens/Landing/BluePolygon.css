@@ -1,0 +1,286 @@
+/*=================================
+Blue Polygon Widgets in Sections
+===================================*/
+
+.light-blue-polygon-widget-bg,
+.navy-blue-polygon-widget-bg {
+    background-image: url("../../assets/images/border-shape1.png");
+    background-repeat: no-repeat;
+    padding: 65px 0;
+    color: #fff;
+}
+
+.light-blue-polygon-widget-bg {
+    direction: ltr;
+    background-color: #08A9E6;
+    background-position: -130px center;
+    background-size: contain;
+    clip-path: polygon(0 0, 84% 0, 77% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 84% 0, 77% 100%, 0% 100%);
+}
+
+
+.navy-blue-polygon-widget-bg {
+    direction: rtl;
+    background-color: #21225f;
+    background-position: right center;
+    background-size: cover;
+    -webkit-clip-path: polygon(27% 0, 100% 0, 100% 100%, 16% 100%);
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 16% 100%);
+}
+
+.polygon-widget-inner .item-box {
+    position: relative;
+}
+
+.polygon-widget-inner .icon {
+    left: 0;
+    top: 50%;
+    line-height: 1;
+    margin-top: 1px;
+    font-size: 53px;
+    position: absolute;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.polygon-widget-inner h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.polygon-widget-inner h3 {
+    width: 130px;
+    line-height: 33px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Counts */
+.polygon-widget-inner h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.polygon-widget-inner p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    direction: rtl;
+    display: inline-block;
+}
+
+.light-blue-polygon-widget-bg .polygon-widget-inner .icon {
+    left: 0;
+}
+
+.navy-blue-polygon-widget-bg .polygon-widget-inner .icon {
+    right: 0;
+}
+
+.light-blue-polygon-widget-bg .polygon-widget-inner .item-box {
+    padding-left: 100px;
+}
+
+.navy-blue-polygon-widget-bg .polygon-widget-inner .item-box {
+    padding-right: 100px;
+}
+
+.light-blue-polygon-widget-bg button {
+    background-color: #21225F;
+}
+
+.navy-blue-polygon-widget-bg button {
+    background-color: #08A9E6;
+}
+
+.polygon-widget-inner .default-btn::before {
+    background: #fff !important;
+}
+
+.polygon-widget-inner .default-btn:hover {
+    color: #21225F;
+}
+
+
+
+
+/*=================================
+Polygon Responsive Styles
+===================================*/
+
+@media only screen and (max-width: 991px) {
+
+    .light-blue-polygon-widget-bg,
+    .navy-blue-polygon-widget-bg {
+        -webkit-clip-path: unset !important;
+        clip-path: unset !important;
+        padding-top: 60px !important;
+        padding-bottom: 35px !important;
+    }
+
+    .polygon-widget-inner .row {
+        justify-content: center;
+    }
+
+    .polygon-widget-inner .item-box {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+        margin-bottom: 25px;
+    }
+
+    .polygon-widget-inner .icon {
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        transform: unset;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .polygon-widget-inner h4 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .polygon-widget-inner h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .polygon-widget-inner h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-top: 8px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+
+    .polygon-widget-inner p {
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    .polygon-widget-inner button {
+        margin-right: 20px;
+        padding: 10px 35px;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+/*=================================
+Special Styles
+===================================*/
+
+/* Features Polygon */
+.features-polygon-widget .polygon-widget-inner .item-box {
+    padding: 2px;
+    padding-right: 85px !important;
+}
+
+.features-polygon-widget {
+    position: relative;
+}
+
+.features-polygon-widget::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    content: "";
+    height: 50%;
+    position: absolute;
+    background-color: #f5f5f5;
+}
+
+/* .features-polygon-widget .navy-blue-polygon-widget-bg {
+    background-position: 50px center;
+    -webkit-clip-path: polygon(19% 0, 100% 0, 100% 100%, 9% 100%);
+    clip-path: polygon(19% 0, 100% 0, 100% 100%, 9% 100%);
+} */
+
+
+
+
+
+
+
+
+
+/* teaching polygon */
+.teaching-polygon-widget {
+    margin-top: 30px;
+    position: relative;
+}
+
+.teaching-polygon-widget::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    content: "";
+    height: 50%;
+    position: absolute;
+    background-color: #f5f5f5;
+}
+
+.teaching-polygon-widget .light-blue-polygon-widget-bg {
+    background-position: -145px center;
+    -webkit-clip-path: polygon(0 0, 92% 0, 85% 100%, 0% 100%);
+    clip-path: polygon(0 0, 92% 0, 85% 100%, 0% 100%);
+}
+
+/* register polyon */
+.register-polygon-widget {
+    position: relative;
+}
+
+/* .register-polygon-widget::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    content: "";
+    height: 50%;
+    position: absolute;
+    background-color: #f5f5f5;
+} */
+
+.register-polygon-widget .navy-blue-polygon-widget-bg {
+    background-position: 50px center;
+    -webkit-clip-path: polygon(19% 0, 100% 0, 100% 100%, 9% 100%);
+    clip-path: polygon(19% 0, 100% 0, 100% 100%, 9% 100%);
+}
+
+
+/* Polygon Responsive */
+@media only screen and (max-width: 991px) {
+
+    .teaching-polygon-widget .row,
+    .register-polygon-widget .row {
+        text-align: right;
+    }
+
+    .features-polygon-widget .polygon-widget-inner .item-box {
+        padding-right: 0 !important;
+    }
+
+    .features-polygon-widget .polygon-widget-inner h3 {
+        padding: 0 20px;
+    }
+
+    .teaching-polygon-widget .polygon-widget-inner .item-box,
+    .register-polygon-widget .polygon-widget-inner .item-box {
+        padding-right: 20px !important;
+        text-align: right !important;
+    }
+}

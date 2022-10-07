@@ -1,0 +1,52 @@
+.panel-sidebar-area {
+  position: relative;
+  /* transform: translateZ(0); */
+  height: 100vh;
+}
+
+.panel-sidebar {
+  width: 25%;
+  background: #07A9E6;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+  color: #fff;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-family: Far Elham;
+  font-weight: 600;
+  color: #21225F !important;
+}
+
+.user-info img {
+  width: 75px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.panel-sidebar ul li a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  padding: 17px 20px;
+  /* border-bottom: 1px solid #f8f8f8; */
+}
+
+@media only screen and (max-width: 767px) {
+  .panel-sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  .courses-table {
+    font-size: 11px !important;
+  }
+}

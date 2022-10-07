@@ -1,0 +1,15 @@
+.signup-area .login-form {
+    width: 500px;
+    margin: -250px auto -500px;
+}
+
+.signup-area .top-polygon {
+    clip-path: polygon(-27% 0, 100% 0, 100% 64%, 20% 100%);
+    -webkit-clip-path: polygon(-27% 0, 100% 0, 100% 64%, 20% 100%);
+}
+
+.signup-area .bottom-polygon {
+    clip-path: polygon(0% 28%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 28%, 100% 0, 100% 100%, 0% 100%);
+    height: 570px;  
+}

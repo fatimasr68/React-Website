@@ -1,0 +1,125 @@
+.news-detail-area .inner-banner .inner-title {
+    padding-top: 75px;
+    padding-bottom: 10px;
+}
+
+.news-detail-area .inner-banner::before {
+    background: #05194e;
+    opacity: 0.85;
+}
+
+.news-detail {
+    padding-bottom: 50px;
+
+}
+
+.news-detail span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.news-detail .icon {
+    color: #08a9e6;
+    font-size: 13px;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.news-page-sidebar .search-box input,
+.news-page-sidebar .search-box span {
+    background-color: #f7f7f7;
+}
+
+.news-page-sidebar .sidebar-widget li a {
+    display: inline-block;
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #888;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.news-page-sidebar .sidebar-widget a:hover {
+    color: #08A9E6;
+}
+
+.news-tag a {
+    display: inline-block;
+    width: auto;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    color: #21225F;
+    padding: 5px 20px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.news-tag a:hover {
+    background-color: #fff;
+    border: 1px solid #08a9e6;
+    color: #08A9E6;
+}
+
+.news-content img {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.news-content p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.news-page-sidebar .news-item {
+    box-shadow: none;
+    border: 1px solid #eee !important;
+    height: auto;
+}
+
+.news-page-sidebar .news-item .card-img {
+    width: 83px;
+    min-width: 83px;
+    height: 83px !important;
+    margin-bottom: 0;
+}
+
+.news-page-sidebar .news-item .card-title {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.news-page-sidebar .news-item .card-title::before {
+    display: none;
+}
+
+.news-page-sidebar .news-item i,
+.news-page-sidebar .news-item svg,
+.news-page-sidebar .news-item .card-text {
+    font-size: 10px;
+}
+
+.news-tag .icon {
+    color: #08a9e6;
+    font-size: 13px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .news-page-sidebar .news-item .card-img {
+        width: 100%;
+        height: auto!important;
+        margin-bottom: 10px;
+    }
+}

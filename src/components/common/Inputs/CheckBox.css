@@ -1,0 +1,39 @@
+.checkbox-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox-input {
+  display: block;
+  width: 15px;
+  height: 14px;
+  margin-top: 1px;
+  margin-left: 5px;
+  border: 1px solid #ECEDF2;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+  appearance: none;
+  -moz-appearance: none;
+}
+
+.checkbox-input:focus {
+  background-color: #fff !important;
+  border-color: #1ABBFF !important;
+  box-shadow: none !important;
+}
+
+.checkbox--active {
+  border-color: #1ABBFF;
+  background: #1ABBFF;
+}
+
+.checkbox-label {
+  cursor: pointer;
+}

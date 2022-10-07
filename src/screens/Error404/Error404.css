@@ -1,0 +1,43 @@
+.error-bg {
+    background-image: url("../../assets/images/bg-page404.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.error-area {
+    padding: 70px 20px;
+    
+}
+
+.error-area h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 280px;
+    font-weight: 900;
+    line-height: 0.8;
+    color: #21225f;
+    letter-spacing: -10px;
+}
+
+.error-area h1 span {
+    color: #08a9e6;
+}
+
+.error-area h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #21225F;
+    margin-top: 80px;
+}
+
+.error-area p {
+    font-size: 14px;
+    color: #666565;
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 991px){
+    .error-area h1, .error-area span {
+        font-size: 110px;
+      }
+}

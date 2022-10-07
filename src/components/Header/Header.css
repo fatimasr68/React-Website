@@ -1,0 +1,227 @@
+/* top-header Style */
+
+.top-header {
+    background-color: #21225F;
+    padding: 13px 0;
+    color: #fff;
+}
+
+.top-header-left {
+    text-align: left;
+}
+
+.top-header-right {
+    text-align: right;
+}
+
+
+.top-header-right ul li,
+.top-header-left ul li {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.top-header-right ul li {
+    margin-right: 27px;
+}
+
+.top-header-left ul li {
+    margin-right: 35px;
+}
+
+.top-header-left ul li span {
+    display: inline-block;
+    margin-left: 8px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.top-header-left ul li:nth-child(2) span {
+    font-size: 14px;
+}
+
+.top-header svg {
+    color: #eee;
+}
+
+
+
+/* Navbar Style */
+.navbar-area {
+    background-color: #fff !important;
+}
+
+.navbar-area.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    transition: 0.5s;
+}
+
+
+.header-navbar {
+    background-color: #fff;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.header-navbar .logo {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.header-navbar .navbar-brand {
+    font-family: Far Elham;
+    font-weight: 600;
+    color: #21225F !important;
+}
+
+.header-navbar .nav-link {
+    color: #333;
+    margin-right: 13px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.header-navbar .navbar-nav>a:first-child {
+    color: #0791BD;
+    margin-right: 13px;
+}
+
+.header-navbar .nav-link:hover {
+    color: #0791BD;
+}
+
+
+.header-navbar .dropdown-menu {
+    display: block;
+    width: 250px;
+    font-size: 14px!important;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: 0.5s;
+}
+
+.dropdown.show .dropdown-menu { 
+    opacity: 1;
+    transform: scaleY(1);
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-menu { 
+    /* max-height: 300px; */
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.header-navbar .dropdown-item {
+    padding: 12px 15px;
+    color: #444 !important;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.header-navbar .dropdown-item:hover {
+    background-color: #fff;
+    color: #0791BD!important;
+}
+
+
+.header-navbar .navbar-toggler {
+    line-height: 1;
+    color: white;
+    border: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../../assets/images/menu-button.png") !important;
+    width: 30px;
+}
+
+.header-navbar .login-register-btn {
+    background-color: #EB272E;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.header-navbar .login-register-btn:hover {
+    background-color: #08A9E6;
+    color: #FFFFFF;
+}
+
+.navbar .default-btn {
+    background-color: #EB272E;
+    position: absolute;
+    left: 5px;
+    top: 16px;
+}
+
+.navbar-left-items .fa-basket-shopping {
+    display: block;
+    background: #f2f2f2;
+    padding: 13px 15px;
+    text-align: center;
+    margin: 0 13px;
+    border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 991px) {
+
+    .top-header-left,
+    .top-header-right {
+        text-align: center;
+    }
+
+    .top-header-right {
+        margin-bottom: 10px;
+    }
+
+    .header-navbar .logo {
+        width: 32px;
+        margin-left: 5px;
+    }
+
+    .header-navbar {
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .header-navbar .navbar-brand span {
+        display: none
+    }
+
+    .header-navbar .nav-link {
+        font-size: 14px;
+    }
+
+    .header-navbar .dropdown-menu {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .navbar-left-items {
+        flex-flow: row;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+}

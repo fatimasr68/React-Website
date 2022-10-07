@@ -1,0 +1,38 @@
+.student-profile-area {
+    overflow: hidden;
+}
+
+.student-profile-area .panel-sidebar ul li:nth-child(2) a {
+    background-color: #fff;
+    color: #777;
+}
+
+.student-profile-area {
+    background-color: #EEF5F9;
+    min-height: 100%;
+}
+
+.student-profile-area h3 {
+    padding: 0 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #05194E;
+}
+
+.edit-profile-form {
+    position: relative;
+    padding: 20px;
+}
+
+.edit-profile-form input {
+    height: 50px;
+}
+
+.edit-profile-form .input-group svg {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    font-size: 13px;
+    color: #ccc;
+    z-index: 1;
+}

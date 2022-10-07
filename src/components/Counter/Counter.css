@@ -1,0 +1,23 @@
+.counter-polygon-widget .polygon-widget-inner .item-box {
+    padding-left: 82px;
+}
+
+.counter-polygon-widget {
+    position: relative;
+    z-index: 2;
+}
+
+.counter-polygon-widget p {
+    font-weight: 600;
+}
+
+.counter-polygon-widget::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    content: "";
+    height: 50%;
+    background-color: #f5f5f5;
+}

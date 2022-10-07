@@ -1,0 +1,43 @@
+.textbox-input {
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+.textbox-input:focus,
+.textbox-input:focus {
+    background-color: #fff !important;
+    border-color: #1ABBFF !important;
+    box-shadow: none !important;
+}
+
+.textbox-error {
+    border: 1px solid #FF4690!important;
+}
+
+.error-message{
+    display: inline-block;
+    background: #FFF0F6;
+    color: #FF4690;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 2px;   
+    margin-top: 10px;
+    position: absolute; 
+    top: 28px;
+    left: 0;
+    z-index: 100;
+    transition: 0.5s;
+  }
+
+  .error-message:before {
+    content: '';  
+    width: 0;  
+    height: 0;  
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #FFF0F6;
+    position: absolute;  
+    top: -10px; 
+    left: 15px;
+  }
+

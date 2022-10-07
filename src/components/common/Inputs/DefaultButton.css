@@ -1,0 +1,42 @@
+.default-btn {
+    background: #08A9E6;
+    color: #FFFFFF;
+    min-width: 140px;
+    padding: 12px 35px;
+    font-size: 13px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.default-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    background: #21225F;
+    border-radius: 50%;
+    z-index: -1;
+    transform-origin: top center;
+    transform: translateX(-50%) translateY(-5%) scale(0.4);
+    transition: transform 0.9s;
+}
+
+.default-btn:hover:before {
+    color: #fff !important;
+    transition: transform 1s;
+    transform: translateX(-45%) translateY(0) scale(1);
+    transform-origin: bottom center;
+}
+
+.red-button {
+    background-color: #EB272E;
+}

@@ -1,0 +1,77 @@
+.card.teacher-item {
+    background-color: transparent;
+    border: none !important;
+    transition: 0.7s;
+}
+
+.teacher-item .card-img {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 15px;
+    border: 15px solid #fff;
+    border-radius: 2px;
+    margin-right: -25px;
+    transition: 0.7s;
+}
+
+.teacher-item .teacher-card-body {
+    background-color: #fff;
+    margin-top: -70px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.teacher-item .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+}
+
+.teacher-item .card-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+
+}
+
+.teacher-item .img-share {
+    margin-top: -20px;
+}
+
+.card.teacher-item:hover .card-img {
+    margin-right: 0 !important;
+}
+
+.card.teacher-item:hover .card-title {
+    color: #08A9E6 !important;
+}
+
+.card.teacher-item:hover .teacher-card-body {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 12px 15px;
+    border-radius: 0 0 2px 20px;
+}
+
+@media only screen and (max-width: 991px) {
+    .card.teacher-item .card-img {
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card.teacher-item .card-img {
+        margin-right: 0 !important;
+        border-radius: 20% 2px 2px 2px;
+        border: 0;
+    }
+
+    .card.teacher-item .col-sm-12:nth-child(2) .card-img  img {
+        border-radius: 110px 0 0 0 !important;
+      }
+
+    .card.teacher-item .teacher-card-body {
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 12px 15px;
+        border-radius: 0px 0px 50px 2px;
+    }
+}

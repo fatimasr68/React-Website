@@ -1,0 +1,46 @@
+.courses-table {
+    background-color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.courses-table thead tr,
+.courses-table tbody tr {
+    border-color: #eee;
+}
+
+
+.courses-table thead tr th,
+.courses-table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 2px;
+    color: #21225f;
+}
+
+.courses-table tbody tr td {
+    color: #555;   
+
+}
+
+.courses-table tbody tr td img {
+    width: 70px;
+}
+
+.courses-table svg {
+    background: #39e600;
+    color: #ffffff;
+    padding: 5px 6px;
+    border-radius: 2px;
+    font-size: 13px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.courses-table .fa-eye {
+    background: #00BFFF;
+} 
+
+.courses-table .fa-trash-can {
+    background: #ff0066;
+}

@@ -1,0 +1,243 @@
+.login-area {
+    position: relative;
+}
+
+.top-polygon,
+.bottom-polygon {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.top-polygon {
+    background-image: url("../../assets/images/vector-login2.svg"),
+                      linear-gradient(90deg, rgba(8, 169, 230, 0.85) 0%, #1D8FE1 48%, #08A9E6 100%);
+    /* background-color: #08A9E6; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    clip-path: polygon(-27% 0, 100% 0, 100% 68%, 20% 100%);
+    -webkit-clip-path: polygon(-27% 0, 100% 0, 100% 68%, 20% 100%);
+    height: 350px;
+    padding-top: 100px;
+    top: 0;
+    /* position: fixed; */
+}
+
+
+.bottom-polygon {
+    background-color: #05194E;
+    clip-path: polygon(0% 40%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 50%, 100% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+    height: 350px;
+    bottom: 0;
+    /* position: fixed; */
+}
+
+.login-form {
+    width: 500px;
+    margin: -250px auto -280px;
+    /* margin: 100px auto -200px!important; */
+    padding: 55px 70px 25px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+
+.login-form h3 {
+    font-family: Far Fanni;
+    font-size: 14px;
+    color: #0791BD;
+    padding: 20px 0 18px;
+}
+
+.login-form p,
+.login-form span,
+.login-form small {
+    font-size: 11px;
+    color: #777;
+}
+
+.login-form a {
+    font-size: 11px;
+    color: #0791BD;
+}
+
+.login-form label {
+    font-size: 11px;
+    color: #777;
+}
+
+.login-form button {
+    width: 100%;
+}
+
+
+.login-form .input-group svg {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    font-size: 13px;
+    color: #ccc;
+    z-index: 1;
+}
+
+.back-to-home a {
+    color: #08A9E6;
+    font-size: 13px;
+}
+
+.back-to-home svg {
+    color: #08A9E6;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.back-to-home:hover svg,
+.back-to-home:hover a {
+    color: #EB272E;
+}
+
+.login-form a.sign-link {
+    color: #EB272E;
+    margin-right: 5px;
+}
+
+
+/*Social Icons*/
+.login-form .login-from {
+    position: relative;
+}
+
+.login-form .login-from::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    width: 110px;
+    height: 1px;
+    background-color: #03a9f4;
+    opacity: 0.2;
+}
+
+.login-form .login-from::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    width: 110px;
+    height: 1px;
+    background-color: #03a9f4;
+    opacity: 0.2;
+}
+
+.social-sign-in ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.social-sign-in ul li a {
+    display: inline-block;
+    /* padding: 5px 10px; */
+    width: 25px;
+    height: 25px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 10px;
+    color: #0e1133;
+    background: #f3f4f8;
+    border-radius: 30px;
+
+}
+
+.social-sign-in ul li a.gg {
+    color: #d8163f;
+    background: rgba(216, 22, 63, 0.1);
+}
+
+.social-sign-in ul li a.fb {
+    color: #285da1;
+    background: rgba(40, 93, 161, 0.1);
+}
+
+.social-sign-in ul li a.tw {
+    color: #03a9f4;
+    background: rgba(3, 169, 244, 0.1);
+}
+
+.social-sign-in ul li a.gg:hover {
+    color: #ffffff;
+    background: #d8163f;
+}
+
+.social-sign-in ul li a.fb:hover {
+    color: #ffffff;
+    background: #285da1;
+}
+
+.social-sign-in ul li a.tw:hover {
+    color: #fff;
+    background: #03a9f4;
+}
+
+
+/*Responsive*/
+@media only screen and (max-width: 767px) {
+    .login-form {
+        width: 100% !important;
+        padding: 40px 35px !important;
+        margin: -180px auto -180px !important;
+    }
+
+    .top-polygon {
+        height: 260px;
+    }
+
+}
+
+
+
+
+
+.radius-shape {
+    position: absolute;
+    border-radius: 100%;
+    background: radial-gradient(#08A9E6, #05194E);
+    opacity: 0.3;
+    overflow: hidden;
+}
+
+
+.radius-shape-1 {
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+}
+
+.radius-shape-2 {
+    bottom: 140px;
+    right: 160px;
+    width: 80px;
+    height: 80px;
+}
+
+.radius-shape-3 {
+    bottom: 50px;
+    left: 80px;
+    width: 60px;
+    height: 60px;
+}
+
+.radius-shape-4 {
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}

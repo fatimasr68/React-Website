@@ -1,0 +1,141 @@
+.card.course-item {
+    border: none !important;
+    border-radius: 2px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 15px;
+    transition: 0.7s;
+}
+
+.card.course-item:hover {
+    transform: translateY(-10px);
+}
+
+
+.course-item .card-img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.course-item .teacher-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 4px;
+}
+
+.course-item .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #21225f;
+    margin: 20px 0 10px;
+}
+
+.card.course-item:hover .card-title {
+    color: #08A9E6 !important;
+}
+
+
+.course-item .card-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.course-item span.card-text {
+    font-size: 12px;
+    color: #888;
+}
+
+.course-item .more {
+    font-size: 12px !important;
+    color: #08A9E6 !important;
+}
+
+.course-item i,
+.course-item svg {
+    font-size: 15px;
+    color: #08A9E6;
+    vertical-align: middle;
+}
+
+.course-item i.fa-heart,
+.course-item i.fa-heart-o {
+    cursor: pointer;
+}
+
+.course-item i.heart-like {
+    color: #FA377B;
+}
+
+.course-item i.heart-no-like {
+    color: #eb87aa;
+}
+
+.course-item i.heart-no-like:hover {
+    color: #FA377B;
+    transform: scale(1.1);
+}
+
+
+.course-item .course-price {
+    color: #20A60A;
+    font-weight: 500;
+}
+
+.last_section button {
+    height: 40px;
+    width: 40%;
+    background-color: #20A60A;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 2px
+}
+
+.last_section button:hover {
+    background-color: #08A9E6
+}
+
+/* Rating Style */
+.rating_reviews span {
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 14px;
+    font-size: 19px;
+    color: orange;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 2px
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+
