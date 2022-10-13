@@ -87,13 +87,12 @@ const CourseItem = ({ course }) => {
 
           <div className="d-flex justify-content-between">
             <Card.Text className="course-price">{course.price} تومان</Card.Text>
-            <Card.Link href={`/courses/course=${course._id}`}>
-              {/* <i className="fa fa-long-arrow-left"></i> */}
+            <Link to="/coursedetail">
               <Card.Text as="span" className="mx-2 more">
                 بیشتر
               </Card.Text>
               <FontAwesomeIcon icon={faArrowLeft} className="more" />
-            </Card.Link>
+            </Link>
           </div>
           <div className="d-flex justify-content-between last_section"></div>
         </Card.Body>
