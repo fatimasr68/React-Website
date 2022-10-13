@@ -26,7 +26,7 @@ const MultiItemCarousel = ({
     loopFillGroupWithBlank: true,
     watchSlidesProgress: true,
     grabCursor: true,
-    autoplay: { delay: 3000 },
+    autoplay: { delay: 1000 },
 
     breakpoints: {
       300: {

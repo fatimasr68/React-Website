@@ -1,10 +1,5 @@
-.student-profile-area {
+.user-panel {
     overflow: hidden;
-}
-
-.student-profile-area .panel-sidebar ul li:nth-child(2) a {
-    background-color: #fff;
-    color: #777;
 }
 
 .student-profile-area {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./SignUp.css";
 import { Row, Col, Container, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import { faHouseUser } from "@fortawesome/free-solid-svg-icons";
 import { Formik, Form } from "formik";
 import { TextBox, CheckBox } from "../../components/index";
 import * as Yup from "yup";
-import { useRef } from "react";
+
 
 const validation = Yup.object().shape({
   signUpName: Yup.string()
@@ -47,7 +47,7 @@ const SignUp = (errors) => {
     console.log(values);
   };
 
-  const formRef = useRef();
+  const textboxRef = useRef();
 
   return (
     <div className="signup-area">
@@ -78,7 +78,7 @@ const SignUp = (errors) => {
               }}
               onSubmit={onSubmit}
               validationSchema={validation}
-              innerRef={formRef}
+              innerRef={textboxRef}
             >
               {({ values, errors }) => (
                 <Form>

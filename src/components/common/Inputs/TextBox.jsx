@@ -3,8 +3,8 @@ import "./TextBox.css";
 import { Field, ErrorMessage, useFormikContext } from "formik";
 
 const TextBox = ({ name, placeholder, label, type, className }) => {
-  const { errors, touched } = useFormikContext();
-  
+const { errors, touched } = useFormikContext();
+
   return (
     <>
       <label htmlFor={name} className="form-check-label">

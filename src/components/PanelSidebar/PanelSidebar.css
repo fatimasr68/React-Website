@@ -38,7 +38,17 @@
   font-size: 14px;
   padding: 17px 20px;
   /* border-bottom: 1px solid #f8f8f8; */
+  transition: 0.5s;
 }
+
+.dashboard-activated .panel-sidebar ul li:nth-child(1) a,
+.profile-activated .panel-sidebar ul li:nth-child(2) a,
+.student-courses-activated .panel-sidebar ul li:nth-child(3) a,
+.all-courses-activated .panel-sidebar ul li:nth-child(4) a {
+  background-color: #fff;
+  color: #777;
+}
+
 
 @media only screen and (max-width: 767px) {
   .panel-sidebar {

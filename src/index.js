@@ -5,12 +5,17 @@ import App from "./App/App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import "./index.css";
-
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "./components/ErrorFallback/ErrorFallback";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <ErrorBoundary
+    FallbackComponent={ErrorFallback}
+    onReset={() => {
+      // Reset the state of your app so the error doesn't happen again
+    }}
+  >
     <App />
-  </React.StrictMode>
+  </ErrorBoundary>
 );
-

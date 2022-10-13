@@ -1,39 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./CourseItem.css";
 import { Card } from "react-bootstrap";
 import { faVideo, faArrowLeft } from "@fortawesome/fontawesome-free-solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useParams } from "react-router-dom";
 
-//course is prope
+
+//course is prop
 const CourseItem = ({ course }) => {
-  const {id} = useParams();
+  const { id } = useParams();
 
   const [likeIcon, setLikeIcon] = useState(false);
-  const [likesCount, setLikeCount] = useState(10);
-  // const [likesCount, setLikeCount] = useState({...course.likeCount});
+  const [likesCount, setLikeCount] = useState(course.likeCount);
 
-
-  useEffect(() => {
-    // setLikeCount(course.likeCount)
-  
-  }, [course.likeCount]);
-  
-
-const Like = () => {
-
-  if (likeIcon) {
-    setLikeIcon(false);
-    setLikeCount(likesCount - 1);
-  } else {
-    setLikeIcon(true);
-    setLikeCount(likesCount + 1);
-  }
-};
-
-
-
-
+  const likeHandler = () => {
+    if (likeIcon) {
+      setLikeIcon(false);
+      setLikeCount(likesCount - 1);
+    } else {
+      setLikeIcon(true);
+      setLikeCount(likesCount + 1);
+    }
+  };
 
   return (
     <>
@@ -52,9 +40,9 @@ const Like = () => {
               />
               {course.videoCount} جلسه
             </Card.Text>
-            <Card.Text as="span" onClick={Like}>
+            <Card.Text as="span" onClick={likeHandler}>
               <i
-                onClick={Like}
+                onClick={likeHandler}
                 className={`fa fa-heart ${
                   likeIcon ? "heart-like" : "heart-no-like"
                 } ms-1`}
@@ -63,11 +51,11 @@ const Like = () => {
             </Card.Text>
           </div>
 
-          <Card.Link href={`/courses/${course._id}`}>
+          <Link to="/coursedetail">
             <Card.Title as="h3" className="mt-4 mb-4">
               {course.courseTitle}
             </Card.Title>
-          </Card.Link>
+          </Link>
 
           <div className="d-flex justify-content-between align-items-center">
             <Card.Text>مدرس : {course.teacherName}</Card.Text>
@@ -107,9 +95,7 @@ const Like = () => {
               <FontAwesomeIcon icon={faArrowLeft} className="more" />
             </Card.Link>
           </div>
-          <div className="d-flex justify-content-between last_section">
-            {/* <Button>ثبت نام</Button> */}
-          </div>
+          <div className="d-flex justify-content-between last_section"></div>
         </Card.Body>
       </Card>
     </>

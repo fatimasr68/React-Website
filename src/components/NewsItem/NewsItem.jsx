@@ -6,6 +6,13 @@ import { faCalendar, faComment } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
+
+const stringShorter = (text, size) => {
+  let newString = text && text.length > 40 ? text.slice(0, size) + "..." : text;
+  return newString;
+};
+
+
 const NewsItem = ({ news }) => {
   return (
     <>
@@ -28,12 +35,7 @@ const NewsItem = ({ news }) => {
               </Card.Text>
             </div>
 
-            <Card.Text className="news-desc pt-3 pb-3">{news.newsDescription}</Card.Text>
-
-            {/* <div
-              className="mx-2 my-3"
-              style={{ borderTop: "1px solid #F3F0F0" }}
-            ></div> */}
+            <Card.Text className="news-desc pt-3 pb-3">{stringShorter( news.newsDescription, 80)}</Card.Text>
 
             <div className="d-flex justify-content-between align-items-center">
               <Card.Text as="span">

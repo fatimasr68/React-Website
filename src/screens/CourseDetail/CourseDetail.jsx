@@ -29,7 +29,7 @@ const CourseDetail = () => {
   const [dislikeIcon, setDislikeIcon] = useState(false);
   const [dislikesCount, setDislikeCount] = useState(3);
 
-  const handleLike = () => {
+  const likeHandler = () => {
     if (likeIcon) {
       setLikeIcon(false);
       setLikeCount(likesCount - 1);
@@ -128,7 +128,7 @@ const CourseDetail = () => {
                   <img
                     width={40}
                     alt="course like"
-                    onClick={handleLike}
+                    onClick={likeHandler}
                     className={`xx ${
                       likeIcon ? "heart-like" : "not-like"
                     } ms-1`}
@@ -138,7 +138,7 @@ const CourseDetail = () => {
                         : require("../../assets/images/icon-like.png")
                     }
                   />
-                  <span onClick={handleLike}>{likesCount}</span>
+                  <span onClick={likeHandler}>{likesCount}</span>
                 </div>
               </Col>
             </Row>
