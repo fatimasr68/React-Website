@@ -122,4 +122,9 @@
         height: auto!important;
         margin-bottom: 10px;
     }
+
+    .news-detail .inner-banner .inner-title h2 {
+        font-size: 16px;
+        line-height: 30px;
+      }
 }
