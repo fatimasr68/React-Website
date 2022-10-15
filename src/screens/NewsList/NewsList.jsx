@@ -65,7 +65,7 @@ const NewsList = () => {
                   <Col
                     lg={7}
                     sm={12}
-                    className="d-flex align-items-center justify-content-end"
+                    className="d-flex align-items-center justify-content-end grid-show"
                   >
                     <FontAwesomeIcon
                       icon={faList}
