@@ -82,6 +82,7 @@ Course Detail Sidebar
     font-size: 15px;
     color: #28B112;
 }
+
 .course-detail-sidebar .offer-box h5 {
     background-color: #FFF0F6;
     padding: 10px 15px;
@@ -122,7 +123,7 @@ Course Detail Sidebar
     color: #08a9e6;
 }
 
-.course-detail-sidebar .progress{
+.course-detail-sidebar .progress {
     background-color: #fff;
     box-shadow: 0 0 3px #ccc;
     width: 100%;
@@ -133,7 +134,7 @@ Course Detail Sidebar
     margin-right: 10px;
 }
 
-.course-detail-sidebar .progress-bar{
+.course-detail-sidebar .progress-bar {
     background-color: #FF4686;
 }
 
@@ -153,45 +154,46 @@ Teacher Detail Sidebar
 }
 
 .teacher-detail-sidebar h4 {
-   font-size: 15px;
-   font-weight: 600;
-   margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
 }
 
 .teacher-detail-sidebar h6 {
     font-size: 14px;
     color: #333;
     margin-bottom: 15px;
- }
+}
 
-.teacher-detail-sidebar p, .teacher-detail-sidebar span {
+.teacher-detail-sidebar p,
+.teacher-detail-sidebar span {
     font-size: 11px;
     color: #666565;
     margin-bottom: 10px;
- }
+}
 
- .teacher-detail-sidebar a {
+.teacher-detail-sidebar a {
     display: inline-block;
     font-size: 14px;
-    color: #EB272E!important;
- }
+    color: #EB272E !important;
+}
 
- .teacher-detail-sidebar .fa-id-card{
-    color: #EB272E!important;
- }
- 
- .teacher-detail-sidebar .fa-star {
+.teacher-detail-sidebar .fa-id-card {
+    color: #EB272E !important;
+}
+
+.teacher-detail-sidebar .fa-star {
     color: rgb(255, 193, 7);
     font-size: 12px;
- }
+}
 
- .teacher-detail-sidebar img {
+.teacher-detail-sidebar img {
     width: 60px;
     height: 65px;
     border-radius: 100%;
     border: 3px solid #fff;
     box-shadow: 0 0 5px #ccc;
- }
+}
 
 
 /*==========================================
@@ -230,9 +232,9 @@ Course Description Sidebar
     bottom: -10px;
     background-color: #08a9e6;
     opacity: 0.7;
-  }
+}
 
-  .course-description h3::after {
+.course-description h3::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -241,7 +243,7 @@ Course Description Sidebar
     width: 120px;
     height: 1px;
     background-color: #ddd;
-  }
+}
 
 .courses-details-list {
     list-style: circle;
@@ -266,13 +268,13 @@ Course Description Sidebar
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #eee;
-    color: #0791BD!important;
+    color: #0791BD !important;
     padding: 5px 20px;
     margin-left: 6px;
     margin-bottom: 10px;
     font-size: 13px;
     transition: 0.5s;
-  }
+}
 
 
 .related-courses h3 {
@@ -283,14 +285,14 @@ Course Description Sidebar
 }
 
 .related-courses .swiper-button-prev {
-    left: 60px!important;
-    right: auto!important;
-  }
+    left: 60px !important;
+    right: auto !important;
+}
 
-  .related-courses .swiper-button-next {
-    left: 10px!important;
-    right: auto!important;
-  }
+.related-courses .swiper-button-next {
+    left: 10px !important;
+    right: auto !important;
+}
 
 
 
@@ -304,15 +306,26 @@ Responsive
         margin-top: 0;
     }
 
-    .course-detail{
+
+    .course-detail {
         justify-content: space-between;
     }
-    .course-detail .icon {
-       margin-right: 0!important;
+
+    .course-detail .inner-banner .inner-title h2 {
+        font-size: 16px;
+        line-height: 30px;
     }
+
+    .course-description p {
+        padding-left: 0;
+    }
+
+    .course-detail .icon {
+        margin-right: 0 !important;
+    }
+
     .like-box,
     .dislike-box {
         margin-top: 30px;
     }
 }
-
