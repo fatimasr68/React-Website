@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import FormRange from "react-bootstrap/esm/FormRange";
 
-const CoursesList = (category) => {
+const CoursesList = () => {
   const [priceValue, setPriceValue] = useState(50000);
 
   return (
@@ -198,7 +198,7 @@ const CoursesList = (category) => {
                       <Col
                         lg={8}
                         sm={12}
-                        className="d-flex align-items-center justify-content-end"
+                        className="d-flex align-items-center justify-content-end grid-show"
                       >
                         <FontAwesomeIcon
                           icon={faList}

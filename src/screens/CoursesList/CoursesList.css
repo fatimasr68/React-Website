@@ -68,3 +68,9 @@
     background-color: #08A9E6;
     color: #fff;
 }
+
+@media only screen and (max-width: 767px) {
+    .courses-list-area .grid-show {
+        display: none !important;
+    }
+}

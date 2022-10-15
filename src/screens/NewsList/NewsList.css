@@ -52,7 +52,7 @@
 }
 
 @media only screen and (max-width: 767px) {
- .news-list-area .show-grid {
-    display: none;
- }
+    .news-list-area .grid-show {
+        display: none!important;
+    }
 }
