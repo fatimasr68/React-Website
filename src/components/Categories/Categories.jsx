@@ -11,7 +11,7 @@ const Categories = (category) => {
       {categoriesData.map((category) => {
         return (
           <Col lg={3} md={6} sm={12} key={category._id}>
-            <div className="category-item my-lg-3 my-sm-2">
+            <div className="category-item mt-lg-3 my-sm-2">
               <a href={`/categories/category=${category._id}`}>
                 <span className={`icon icon-${category._id}`}>
                   <FontAwesomeIcon icon={category.icon} />
