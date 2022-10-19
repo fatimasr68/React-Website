@@ -1,25 +1,27 @@
 import React from "react";
-import "./Categories.css";
 import categoriesData from "./categoriesData";
 import { Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
+import { Category, IconArea, Title } from "./Categories.style";
 
-const Categories = (category) => {
+
+const Categories = () => {
   return (
     <>
       {categoriesData.map((category) => {
         return (
           <Col lg={3} md={6} sm={12} key={category._id}>
-            <div className="category-item mt-lg-3 my-sm-2">
-              <a href={`/categories/category=${category._id}`}>
-                <span className={`icon icon-${category._id}`}>
+            <Category className="mt-lg-3 my-sm-2">
+              <Link to="/">
+                <IconArea className={`icon-${category._id}`}>
                   <FontAwesomeIcon icon={category.icon} />
                   <Icon icon={category.icon} />
-                </span>
-                <h3>{category.title}</h3>
-              </a>
-            </div>
+                </IconArea>
+                <Title>{category.title}</Title>
+              </Link>
+            </Category>
           </Col>
         );
       })}
