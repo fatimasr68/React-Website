@@ -51,7 +51,7 @@ const CourseItem = ({ course }) => {
             </Card.Text>
           </div>
 
-          <Link to="/coursedetail">
+          <Link to={`/course/${course._id}`}>
             <Card.Title as="h3" className="mt-4 mb-4">
               {course.courseTitle}
             </Card.Title>
@@ -87,7 +87,7 @@ const CourseItem = ({ course }) => {
 
           <div className="d-flex justify-content-between">
             <Card.Text className="course-price">{course.price} تومان</Card.Text>
-            <Link to="/coursedetail">
+            <Link to={`/course/${course._id}`}>
               <Card.Text as="span" className="mx-2 more">
                 بیشتر
               </Card.Text>
