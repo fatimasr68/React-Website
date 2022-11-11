@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/React-Website/static/css/main.9ded2937.css",
-    "main.js": "/React-Website/static/js/main.36e72ecc.js",
+    "main.css": "/React-Website/static/css/main.7111d0a1.css",
+    "main.js": "/React-Website/static/js/main.f24e48f3.js",
     "static/js/483.c26e9f0d.chunk.js": "/React-Website/static/js/483.c26e9f0d.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/React-Website/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/course-wordpress.jpg": "/React-Website/static/media/course-wordpress.d8a212a8a44f7edaccfb.jpg",
     "static/media/course-graphql.jpg": "/React-Website/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg",
     "static/media/course-react.jpg": "/React-Website/static/media/course-react.999d5d4b7ef4771200c2.jpg",
     "static/media/course-javascript.jpg": "/React-Website/static/media/course-javascript.8afdeff32816e30422da.jpg",
     "static/media/course-gatsby.jpg": "/React-Website/static/media/course-gatsby.460be4ebbf9db1ccfe5d.jpg",
+    "static/media/course-css.jpg": "/React-Website/static/media/course-css.e2fee8ac50e018baa8fc.jpg",
     "static/media/banner-courses.jpg": "/React-Website/static/media/banner-courses.e8e1ab05d4f2e9535881.jpg",
     "static/media/banner-news.jpg": "/React-Website/static/media/banner-news.9ba80d72a3b1f0e4e1c3.jpg",
     "static/media/course-angular.jpg": "/React-Website/static/media/course-angular.8553e67e04af598d0cc4.jpg",
@@ -20,6 +22,7 @@
     "static/media/suggestion-img2.jpg": "/React-Website/static/media/suggestion-img2.5a5652cf272f4b32c62c.jpg",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/news-2.jpg": "/React-Website/static/media/news-2.268fa67373faf56b76b3.jpg",
+    "static/media/course-sql.png": "/React-Website/static/media/course-sql.4f0323cf1cd95a621e1b.png",
     "static/media/hero-img1.jpg": "/React-Website/static/media/hero-img1.6c6a22b6f2e4289ec885.jpg",
     "static/media/byekan.otf": "/React-Website/static/media/byekan.885315c6703783d011bb.otf",
     "static/media/news-3.jpg": "/React-Website/static/media/news-3.ee2eaea87d1340a90f09.jpg",
@@ -44,12 +47,12 @@
     "static/media/bg-shape1.png": "/React-Website/static/media/bg-shape1.9c63765e75080ac53e06.png",
     "static/media/vector-login2.svg": "/React-Website/static/media/vector-login2.1c8caa8edf53f8124199.svg",
     "index.html": "/React-Website/index.html",
-    "main.9ded2937.css.map": "/React-Website/static/css/main.9ded2937.css.map",
-    "main.36e72ecc.js.map": "/React-Website/static/js/main.36e72ecc.js.map",
+    "main.7111d0a1.css.map": "/React-Website/static/css/main.7111d0a1.css.map",
+    "main.f24e48f3.js.map": "/React-Website/static/js/main.f24e48f3.js.map",
     "483.c26e9f0d.chunk.js.map": "/React-Website/static/js/483.c26e9f0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ded2937.css",
-    "static/js/main.36e72ecc.js"
+    "static/css/main.7111d0a1.css",
+    "static/js/main.f24e48f3.js"
   ]
 }
