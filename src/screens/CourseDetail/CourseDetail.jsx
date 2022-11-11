@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CourseDetail.css";
+import coursesData from "../../components/Courses/coursesData";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,14 +18,32 @@ import { faChalkboardTeacher, faGraduationCap, faTags } from "@fortawesome/fonta
 import { faIdCard } from "@fortawesome/free-regular-svg-icons";
 import { Comment, CoursesSlider, DefaultButton } from "../../components";
 import SocialShare from "../../components/common/SocialShare/SocialShare";
+import { useParams } from "react-router-dom";
 
 
 
 const CourseDetail = () => {
 
+  const [courseData, setCourseData] = useState(coursesData);
+  const { _id } = useParams();
+
+
+  const onGetCourseById = () => {
+    const selectedCourseById = courseData.filter((course) => course._id === _id);
+    console.log(selectedCourseById[0]);
+    setCourseData(selectedCourseById[0]);
+};
+
+useEffect(() => {
+  onGetCourseById();
+  
+}, []);
+
+
   const capacity = 60;
   const [likeIcon, setLikeIcon] = useState(false);
-  const [likesCount, setLikeCount] = useState(85);
+  const [likesCount, setLikeCount] = useState(80);
+  
 
   const [dislikeIcon, setDislikeIcon] = useState(false);
   const [dislikesCount, setDislikeCount] = useState(3);
@@ -64,7 +83,7 @@ const CourseDetail = () => {
           <Container>
             <Row>
               <Col lg={12} className="inner-title text-end">
-                <h2>دوره جامع برنامه نویسی با جاوا اسکریپت</h2>
+                <h2>{courseData.courseTitle}</h2>
               </Col>
             </Row>
             <Row>
@@ -89,15 +108,15 @@ const CourseDetail = () => {
                 <ul className="course-detail d-flex align-items-center mt-4">
                   <li className="d-flex align-items-center">
                     <img
-                      src={require("../../assets/images/teacher-thumb-2.jpg")}
+                      src={courseData.teacherImage}
                       className="ms-2"
                     />
-                    <span>مدرس: فاطمه صوری</span>
+                    <span>مدرس: {courseData.teacherName}</span>
                   </li>
 
                   <li className="d-flex align-items-center">
                     <FontAwesomeIcon icon="video" className="icon me-5 ms-2" />
-                    <span>17 جلسه</span>
+                    <span>{courseData.videoCount} جلسه</span>
                   </li>
 
                   <li className="d-flex align-items-center">
@@ -150,7 +169,7 @@ const CourseDetail = () => {
             <Col lg={8} sm={12} className="course-description">
               <Row>
                 <Col lg={12}>
-                  <h2 className="mt-3 mb-4">دوره جامع آموزش جاوا اسکریپت</h2>
+                  <h2 className="mt-3 mb-4">{courseData.courseTitle}</h2>
                   <p className="mb-4">
                     جاوا اسکریپت که به اختصار JS نیز نامیده می‌شود، یکی از
                     محبوبترین زبان‌های برنامه نویسی است. جاوا اسکریپت زبانی سطح
@@ -214,7 +233,7 @@ const CourseDetail = () => {
             <Col lg={4} sm={12}>
               <div className="course-detail-sidebar">
                 <img
-                  src={require("../../assets/images/course-javascript.jpg")}
+                  src={courseData.courseImage}
                 />
                 <div className="sidebar-content">
                   <ul className="offer-box d-flex justify-content-between">
@@ -224,7 +243,7 @@ const CourseDetail = () => {
                         className="ms-2"
                         color="#28B112"
                       />
-                      <h4>500 هزار تومان</h4>
+                      <h4>{courseData.price}</h4>
                     </li>
                     <li>
                       <h5>10% تخفیف</h5>
@@ -238,7 +257,7 @@ const CourseDetail = () => {
                     <li>
                       <FontAwesomeIcon icon={faChartSimple} />
                       <span className="me-2 ms-1">سطح دوره:</span>
-                      <span>متوسط</span>
+                      <span>{courseData.level}</span>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={faCalendar} />
@@ -288,7 +307,7 @@ const CourseDetail = () => {
                 </ul>
                 <ul className="d-flex justify-content-between align-items-center">
                   <li className="me-4">
-                    <h6>فاطمه صوری</h6>
+                    <h6>{courseData.teacherName}</h6>
                     <p>کارشناس ارشد مهندسی کامپیوتر</p>
                     <p>برنامه نویس Full Stack</p>
                     <FontAwesomeIcon icon={faIdCard} />
@@ -296,7 +315,7 @@ const CourseDetail = () => {
                   </li>
                   <li>
                     <img
-                      src={require("../../assets/images/teacher-1.jpg")}
+                      src={courseData.teacherImage}
                     />
                   </li>
                 </ul>

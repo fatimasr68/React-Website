@@ -8,7 +8,7 @@ import { Link, useParams } from "react-router-dom";
 
 //course is prop
 const CourseItem = ({ course }) => {
-  const { id } = useParams();
+
 
   const [likeIcon, setLikeIcon] = useState(false);
   const [likesCount, setLikeCount] = useState(course.likeCount);
@@ -26,7 +26,7 @@ const CourseItem = ({ course }) => {
   return (
     <>
       <Card className="course-item my-3 p-0">
-        <Link to="/coursedetail">
+        <Link to={`/course/${course._id}`}>
           <Card.Img src={course.courseImage} varient="top" />
         </Link>
 
