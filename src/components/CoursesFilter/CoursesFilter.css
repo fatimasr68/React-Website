@@ -21,7 +21,7 @@
 }
 
 .courses-page-sidebar input[type=checkbox] {
-    appearance: none;
+    /* appearance: none;
     -moz-appearance: none;
     display: block;
     width: 18px;
@@ -29,12 +29,13 @@
     border: 1px solid #ECEDF2;
     border-radius: 1px;
     outline: none;
-    margin-top: 5px;
+    margin-top: 5px; */
 }
 
 .courses-page-sidebar .filter-content li {
     display: block;
 }
+
 
 .courses-page-sidebar .filter-content li span.category-count {
     background-color: #DFF3EF;

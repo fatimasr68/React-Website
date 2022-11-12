@@ -34,7 +34,7 @@ const CoursesFilter = (props) => {
                   key={category._id}
                   className="d-flex justify-content-between align-items-center"
                 >
-                  {/* <input
+                  <input
                             id={`check-${category._id}`}
                             type="checkbox"
                             name="check"
@@ -44,20 +44,15 @@ const CoursesFilter = (props) => {
                           />
                           <label htmlFor={`check-${category._id}`}>
                             {category.title}{" "}
-                          </label> */}
-                  <Form.Check
+                          </label>
+                  {/* <Form.Check
                     reverse
                     type="checkbox"
                     id={`categoryCheck-${category._id}`}
                     label={category.title}
                     value={category.title}
                     onChange={props.filterCourseCategories}
-                  />
-
-                  {/* <CheckBox 
-                              name={`categoryCheck-${category._id}`}
-                              label={category.title}
-                            /> */}
+                  /> */}
 
                   <span className="category-count">{category.count}</span>
                 </li>

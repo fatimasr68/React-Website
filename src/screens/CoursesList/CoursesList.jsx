@@ -43,7 +43,7 @@ const CoursesList = () => {
 
 
 
-  const filterCourseCategories1 = (e) => {
+  const filterCourseCategories2 = (e) => {
     const categoryItem = e.target.parentNode;
     const categories = categoryItem.parentNode;
 
