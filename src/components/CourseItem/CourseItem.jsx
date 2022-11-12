@@ -26,7 +26,7 @@ const CourseItem = ({ course }) => {
     <>
       <Card className="course-item my-3 p-0">
         <Link to={`/course/${course._id}`}>
-          <Card.Img src={course.courseImage} varient="top" />
+          <Card.Img src={course.courseImage} varient="top" className="course-img" />
         </Link>
 
         <Card.Body className="px-4 pb-4">

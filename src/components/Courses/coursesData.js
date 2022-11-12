@@ -104,7 +104,7 @@ const coursesData = [
     likeCount: 50,
     videoCount: 25,
     price: 8500000,
-    courseImage: require("../../assets/images/course-sql.png"),
+    courseImage: require("../../assets/images/course-sql.jpg"),
     teacherImage: require("../../assets/images/teacher-thumb-2.jpg"),
   }
 ];
