@@ -63,7 +63,7 @@ const coursesData = [
     _id: "6",
     courseTitle: "دوره جامع آموزش پایتون",
     teacherName: "فاطمه صوری",
-    category: "دیتا ساینس",
+    category: "دیتاساینس",
     level: "پیشرفته",
     likeCount: 78,
     videoCount: 10,

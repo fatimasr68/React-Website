@@ -1,0 +1,55 @@
+.courses-page-sidebar .course-filter {
+    background-color: #f5f5f5;
+    padding: 17px 25px;
+
+}
+
+.courses-page-sidebar .course-filter h3 {
+    font-size: 16px;
+}
+
+.courses-page-sidebar .remove-filter-btn {
+    color: #08A9E6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.courses-page-sidebar .course-filter svg {
+    color: #08A9E6;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.courses-page-sidebar input[type=checkbox] {
+    appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ECEDF2;
+    border-radius: 1px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.courses-page-sidebar .filter-content li {
+    display: block;
+}
+
+.courses-page-sidebar .filter-content li span.category-count {
+    background-color: #DFF3EF;
+    color: #08A9E6;
+    display: inline-block;
+    width: 28px;
+    line-height: 24px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.courses-page-sidebar .filter-content li span:hover {
+    background-color: #08A9E6;
+    color: #fff;
+}

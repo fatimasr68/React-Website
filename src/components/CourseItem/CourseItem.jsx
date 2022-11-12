@@ -3,12 +3,11 @@ import "./CourseItem.css";
 import { Card } from "react-bootstrap";
 import { faVideo, faArrowLeft } from "@fortawesome/fontawesome-free-solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 //course is prop
 const CourseItem = ({ course }) => {
-
 
   const [likeIcon, setLikeIcon] = useState(false);
   const [likesCount, setLikeCount] = useState(course.likeCount);
