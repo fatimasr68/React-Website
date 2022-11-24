@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import {
-  Col,
-  Row,
-  Nav,
-  Navbar,
-  NavDropdown,
-  Offcanvas,
-  Form,
-} from "react-bootstrap";
+import { Col, Row, Nav, Navbar, NavDropdown, Offcanvas } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -20,16 +12,16 @@ import {
   faPhone,
   faEnvelope,
   faBasketShopping,
-  faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Login from "../Login/Login";
+
 const Header = () => {
- 
   const [menuOpen, toggleMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
   const handleScroll = () => {
-    window.pageYOffset > 120 ? setSticky(true) : setSticky(false);
+    window.pageYOffset > 100 ? setSticky(true) : setSticky(false);
   };
 
   useEffect(() => {
@@ -41,10 +33,6 @@ const Header = () => {
   }, []);
 
   let classHide = isSticky ? "is-sticky" : "";
-
-
-
-
 
   return (
     <div className="header">
@@ -104,7 +92,7 @@ const Header = () => {
 
       <div className={`navbar-area ${classHide}`}>
         <div className="section-container">
-          <div className="header-navbar">
+          <div className="header-navbar d-flex justify-content-between">
             {["lg"].map((expand) => (
               <Navbar
                 key={expand}
@@ -123,7 +111,7 @@ const Header = () => {
                       src={require("../../assets/images/logo.png")}
                       className="d-inline-block logo"
                     />{" "}
-                    <span>آلفا</span>
+                    <span className="navbar-brand-text">آلفا</span>
                   </Navbar.Brand>
                 </Link>
 
@@ -142,7 +130,7 @@ const Header = () => {
                         src={require("../../assets/images/logo.png")}
                         className="d-inline-block logo"
                       />{" "}
-                      آلفا
+                      <span className="navbar-brand-text">آلفا</span>
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
@@ -187,38 +175,20 @@ const Header = () => {
                         تماس با ما
                       </Nav.Link>
                     </Nav>
-                    <div className="navbar-left-items d-flex align-items-center">
-                      {/* <Form.Control
+
+                    {/* <Form.Control
                         type="search"
                         placeholder="جستجو ..."
                         className="me-2"
                         aria-label="Search"
                       />
                       <Button variant="outline-success">جستجو</Button> */}
-
-                      <Link to="/">
-                        <FontAwesomeIcon
-                          icon={faBasketShopping}
-                          color="#FA377B"
-                          className="ms-3"
-                        />
-                      </Link>
-                      {/* <DefaultButton
-                            text={"ثبت نام / ورود"}
-                            className="login-register-btn"
-                          /> */}
-                      <Link to="/login">
-                        <button className="login-register-btn">
-                          <FontAwesomeIcon icon={faUserPlus} className="ms-2" />
-                          ثبت نام / ورود
-                        </button>
-                      </Link>
-                    </div>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>
                 {/* </Container> */}
               </Navbar>
             ))}
+            <Login />
           </div>
         </div>
       </div>

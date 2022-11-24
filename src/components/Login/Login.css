@@ -1,0 +1,108 @@
+.login-area .login-register-btn {
+    background-color: #EB272E;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.login-area .default-btn {
+    background-color: #EB272E;
+    position: absolute;
+    left: 5px;
+    top: 16px;
+}
+
+.login-area .login-register-btn:hover {
+    background-color: #08A9E6;
+    color: #FFFFFF;
+}
+
+.login-area svg {
+    font-size: 16px;
+}
+
+.login-area .user-shopping-cart,
+.login-area .shopping-cart {
+    display: block;
+    padding: 13px 15px;
+    text-align: center;
+    margin: 0 13px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+.login-area .shopping-cart {
+    box-shadow: 0px 0px 2px #e6c7c8;
+    background-color: #f7f7f7;
+}
+
+.login-area .dropdown-toggle {
+    border: none;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+.login-area .dropdown-toggle:hover {
+    background-color: #f6f6f6;
+}
+
+.login-area .dropdown-toggle:after {
+    content: "\f078";
+    font-family: fontawesome;
+    font-size: 10px;
+    border: 0 !important;
+    color: #08A9E6;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 991px) {
+    .login-area .login-register-btn {
+        background-color: #fff;
+        color: #08A9E6 ;
+        padding: 10px 7px;
+        font-size: 0;
+    }
+
+    .login-area .shopping-cart {
+        color: #08A9E6 ;
+        box-shadow: none;
+        margin-left: 5px!important;
+    }
+
+    .login-area .user-shopping-cart,
+    .login-area .fa-user-check {
+        font-size: 15px;
+        color: #08a9e6;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .login-area .fa-basket-shopping,
+    .login-area .fa-shopping-cart {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .login-area .dropdown-toggle {
+        background-color: #fff;
+        padding: 0;
+        box-shadow: none;
+        height: 20px;
+    }
+
+    .login-area .dropdown-toggle:after {
+        display: none;
+    }
+
+    .login-area .dropdown-menu {
+        left: 0;
+        right: unset;
+    }
+
+}
