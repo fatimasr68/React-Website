@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Website/static/css/main.7111d0a1.css",
-    "main.js": "/React-Website/static/js/main.f24e48f3.js",
+    "main.css": "/React-Website/static/css/main.60e410f3.css",
+    "main.js": "/React-Website/static/js/main.a5da1987.js",
     "static/js/483.c26e9f0d.chunk.js": "/React-Website/static/js/483.c26e9f0d.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/React-Website/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -22,7 +22,6 @@
     "static/media/suggestion-img2.jpg": "/React-Website/static/media/suggestion-img2.5a5652cf272f4b32c62c.jpg",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/news-2.jpg": "/React-Website/static/media/news-2.268fa67373faf56b76b3.jpg",
-    "static/media/course-sql.png": "/React-Website/static/media/course-sql.4f0323cf1cd95a621e1b.png",
     "static/media/hero-img1.jpg": "/React-Website/static/media/hero-img1.6c6a22b6f2e4289ec885.jpg",
     "static/media/byekan.otf": "/React-Website/static/media/byekan.885315c6703783d011bb.otf",
     "static/media/news-3.jpg": "/React-Website/static/media/news-3.ee2eaea87d1340a90f09.jpg",
@@ -33,6 +32,7 @@
     "static/media/hero-img2.jpg": "/React-Website/static/media/hero-img2.01b089d4276ec2c999ff.jpg",
     "static/media/Far.Elham.ttf": "/React-Website/static/media/Far.Elham.e96bc7401fb0e43206a5.ttf",
     "static/media/teacher-3.jpg": "/React-Website/static/media/teacher-3.38c6ca4af7827105634e.jpg",
+    "static/media/course-sql.jpg": "/React-Website/static/media/course-sql.f9c70a91471d2e5f7008.jpg",
     "static/media/teacher-1.jpg": "/React-Website/static/media/teacher-1.1e4f766d5a12c2df6c26.jpg",
     "static/media/teacher-2.jpg": "/React-Website/static/media/teacher-2.59d5d6c9833a85307390.jpg",
     "static/media/Far.Fanni.ttf": "/React-Website/static/media/Far.Fanni.ae74e9e029bf1f694967.ttf",
@@ -45,14 +45,14 @@
     "static/media/bg-page404.png": "/React-Website/static/media/bg-page404.200cb5bdfddeef9da907.png",
     "static/media/services-Item-bg.png": "/React-Website/static/media/services-Item-bg.3956b3abfadf5f0d3e97.png",
     "static/media/bg-shape1.png": "/React-Website/static/media/bg-shape1.9c63765e75080ac53e06.png",
-    "static/media/vector-login2.svg": "/React-Website/static/media/vector-login2.1c8caa8edf53f8124199.svg",
+    "static/media/vector-login2.svg": "/React-Website/static/media/vector-login2.14653124ff38ccc9d6b1.svg",
     "index.html": "/React-Website/index.html",
-    "main.7111d0a1.css.map": "/React-Website/static/css/main.7111d0a1.css.map",
-    "main.f24e48f3.js.map": "/React-Website/static/js/main.f24e48f3.js.map",
+    "main.60e410f3.css.map": "/React-Website/static/css/main.60e410f3.css.map",
+    "main.a5da1987.js.map": "/React-Website/static/js/main.a5da1987.js.map",
     "483.c26e9f0d.chunk.js.map": "/React-Website/static/js/483.c26e9f0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7111d0a1.css",
-    "static/js/main.f24e48f3.js"
+    "static/css/main.60e410f3.css",
+    "static/js/main.a5da1987.js"
   ]
 }
