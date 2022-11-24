@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./NewsDetail.css";
+import newsData from "../../components/News/newsData";
 import {
   Container,
   Row,
@@ -14,10 +15,28 @@ import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar, faComment } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import { Comment, SocialShare } from "../../components/index";
+import { useParams } from "react-router-dom";
 
 
 
 const NewsDetail = () => {
+
+  const [newsDataa, setNewsData] = useState(newsData);
+  const { _id } = useParams();
+
+
+  const onGetNewsById = () => {
+    const selectedNewsById = newsDataa.filter((news) => news._id === _id);
+    console.log(selectedNewsById[0]);
+    setNewsData(selectedNewsById[0]);
+};
+
+useEffect(() => {
+  onGetNewsById();
+  
+}, []);
+
+
   return (
     <>
       <div className="news-detail-area">
@@ -25,13 +44,15 @@ const NewsDetail = () => {
           <Container className="news-detail">
             <Row>
               <Col className="inner-title text-end">
-                <h2>کاربرد کتابخانه ری اکت در برنامه نویسی چیست؟</h2>
+                <h2>{newsDataa.newsTitle}</h2>
               </Col>
             </Row>
             <Row>
               <Col className="d-flex pt-4">
-                <FontAwesomeIcon icon="user" className="icon" />
-                <span>مقاله</span>
+              <FontAwesomeIcon icon="tasks" className="icon" />
+                <span>{newsDataa.newsCategory === "news" ? "اخبار" 
+                : newsDataa.newsCategory === "article" ? "مقاله" 
+                : "رویداد"}</span>
                 <FontAwesomeIcon icon="calendar" className="icon me-5" />
                 <span>10 تیر 1401</span>
               </Col>
@@ -200,7 +221,7 @@ const NewsDetail = () => {
             <Col lg={8} className="news-content">
               <Row>
                 <Col lg={12}>
-                  <Image src={require("../../assets/images/news-1.jpg")} />
+                  <Image src={newsDataa.newsImage} />
                 </Col>
 
                 <Col lg={12}>

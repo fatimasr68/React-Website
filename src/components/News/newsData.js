@@ -1,8 +1,8 @@
 const newsData = [
   {
     _id: "1",
-    newsCategory: "news",
-    newsTitle: "دوره های آموزشی",
+    newsCategory: "event",
+    newsTitle: "برگزاری کارگاه آموزش پروژه محور ری اکت در آموزشگاه آلفا",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
@@ -46,7 +46,7 @@ const newsData = [
   {
     _id: "5",
     newsCategory: "article",
-    newsTitle: "دوره های آموزشی",
+    newsTitle: "کاربرد کتابخانه ری اکت چیست؟",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
