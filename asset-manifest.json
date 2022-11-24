@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Website/static/css/main.60e410f3.css",
-    "main.js": "/React-Website/static/js/main.a5da1987.js",
+    "main.js": "/React-Website/static/js/main.cf796cac.js",
     "static/js/483.c26e9f0d.chunk.js": "/React-Website/static/js/483.c26e9f0d.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/React-Website/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -48,11 +48,11 @@
     "static/media/vector-login2.svg": "/React-Website/static/media/vector-login2.14653124ff38ccc9d6b1.svg",
     "index.html": "/React-Website/index.html",
     "main.60e410f3.css.map": "/React-Website/static/css/main.60e410f3.css.map",
-    "main.a5da1987.js.map": "/React-Website/static/js/main.a5da1987.js.map",
+    "main.cf796cac.js.map": "/React-Website/static/js/main.cf796cac.js.map",
     "483.c26e9f0d.chunk.js.map": "/React-Website/static/js/483.c26e9f0d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60e410f3.css",
-    "static/js/main.a5da1987.js"
+    "static/js/main.cf796cac.js"
   ]
 }
