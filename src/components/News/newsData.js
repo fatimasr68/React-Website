@@ -6,7 +6,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 10,
     newsImage: require("../../assets/images/news-1.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
@@ -17,7 +17,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 7,
     newsImage: require("../../assets/images/news-2.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
@@ -28,7 +28,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 5,
     newsImage: require("../../assets/images/news-3.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
@@ -39,7 +39,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 3,
     newsImage: require("../../assets/images/news-1.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
@@ -50,7 +50,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 5,
     newsImage: require("../../assets/images/news-1.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
@@ -72,7 +72,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 12,
     newsImage: require("../../assets/images/news-2.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
@@ -83,7 +83,7 @@ const newsData = [
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
     newsDate: "10 تیر 1401",
-    newsCommentCount: 15,
+    newsCommentCount: 17,
     newsImage: require("../../assets/images/news-3.jpg"),
     newsTags: ["فرانت اند", "برنامه نویسی وب", "JSX"],
   },
