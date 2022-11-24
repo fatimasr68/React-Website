@@ -36,7 +36,7 @@ const CoursesFilter = (props) => {
                 >
                   <input
                             id={`check-${category._id}`}
-                            type="checkbox"
+                            type="radio"
                             name="check"
                             label={category.title}
                             value={category.title}

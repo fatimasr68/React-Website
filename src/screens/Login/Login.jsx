@@ -26,7 +26,7 @@ const Login = () => {
   };
 
   return (
-    <div className="login-area">
+    <div className="login-page-area">
       <div className="top-polygon"></div>
       <Container className="px-4">
         <div className="login-form">
