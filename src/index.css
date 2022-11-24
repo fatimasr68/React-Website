@@ -48,6 +48,7 @@ img {
 input[type=text],
 input[type=email],
 input[type=password] {
+  width: 100%;
   font-size: 12px;
   color: #333;
   background-color: #fff;
@@ -399,7 +400,8 @@ Change Bootstrap Default Styles
 }
 
 .form-control:focus,
-.form-check .form-check-input:focus {
+.form-check .form-check-input:focus,
+.form-select:focus {
   background-color: #fff !important;
   border-color: #1ABBFF !important;
   box-shadow: none !important;

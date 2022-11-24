@@ -1,7 +1,7 @@
 const newsData = [
   {
     _id: "1",
-    newsCategory: "اخبار",
+    newsCategory: "news",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -12,7 +12,7 @@ const newsData = [
   },
   {
     _id: "2",
-    newsCategory: "اخبار",
+    newsCategory: "news",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -23,7 +23,7 @@ const newsData = [
   },
   {
     _id: "3",
-    newsCategory: "مقاله",
+    newsCategory: "article",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -34,7 +34,7 @@ const newsData = [
   },
   {
     _id: "4",
-    newsCategory: "مقاله",
+    newsCategory: "article",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -45,7 +45,7 @@ const newsData = [
   },
   {
     _id: "5",
-    newsCategory: "مقاله",
+    newsCategory: "article",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -56,7 +56,7 @@ const newsData = [
   },
   {
     _id: "6",
-    newsCategory: "مقاله",
+    newsCategory: "article",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -67,7 +67,7 @@ const newsData = [
   },
   {
     _id: "7",
-    newsCategory: "مقاله",
+    newsCategory: "article",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",
@@ -78,7 +78,7 @@ const newsData = [
   },
   {
     _id: "8",
-    newsCategory: "مقاله",
+    newsCategory: "event",
     newsTitle: "دوره های آموزشی",
     newsDescription:
       "آموزشگاه در حال تدوین دوره های جدید برنامه نویسی برای علاقمندان می باشد.",

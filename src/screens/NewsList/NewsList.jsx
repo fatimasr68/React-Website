@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewsList.css";
+import newsData from "../../components/News/newsData";
 import {
   Container,
   Row,
   Col,
-  Dropdown,
   Form,
   InputGroup,
+  FormSelect,
 } from "react-bootstrap";
-import { News } from "../../components";
+import { News, NewsItem } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGrip, faList, faNewspaper } from "@fortawesome/free-solid-svg-icons";
-
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
 const NewsList = () => {
+  const [newsDataa, setNewsData] = useState(newsData);
+  const [newsDataCount, setNewsDataCount] = useState(newsData.length);
+  const [newsFilteredData, setNewsFilteredData] = useState(newsData);
+
+  const filterNewsCategories = (e) => {
+    if (e.target.value === "all") {
+      setNewsFilteredData(newsDataa);
+      setNewsDataCount(newsDataa.length);
+    } else {
+      const filteredNews = newsDataa.filter((news) =>
+        news.newsCategory.includes(e.target.value)
+      );
+      setNewsFilteredData(filteredNews);
+      setNewsDataCount(filteredNews.length);
+    }
+  };
+
   return (
     <>
       <div className="news-list-area">
@@ -48,18 +65,16 @@ const NewsList = () => {
                       />
                     </InputGroup>
 
-                    <Dropdown className="d-inline mx-2">
-                      <Dropdown.Toggle id="dropdown-autoclose-true">
-                        انتخاب دسته بندی
-                      </Dropdown.Toggle>
-
-                      <Dropdown.Menu>
-                        <Dropdown.Item href="#">اخبار</Dropdown.Item>
-                        <Dropdown.Item href="#">مقالات</Dropdown.Item>
-                        <Dropdown.Item href="#">رویدادها</Dropdown.Item>
-                        <Dropdown.Item href="#">همه</Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                    <FormSelect
+                      className="d-inline mx-2"
+                      placeholder="انتخاب دسته بندی"
+                      onChange={filterNewsCategories}
+                    >
+                      <option value="all">همه مطالب</option>
+                      <option value="news">اخبار</option>
+                      <option value="article">مقالات</option>
+                      <option value="event">رویدادها</option>
+                    </FormSelect>
                   </Col>
 
                   <Col
@@ -67,19 +82,26 @@ const NewsList = () => {
                     sm={12}
                     className="d-flex align-items-center justify-content-end grid-show"
                   >
-                    <FontAwesomeIcon
+                    {/* <FontAwesomeIcon
                       icon={faList}
                       className="ms-2"
                       color="#777"
                     />
-                    <FontAwesomeIcon icon={faGrip} color="#1ABBFF" />
+                    <FontAwesomeIcon icon={faGrip} color="#1ABBFF" /> */}
+                    <span className="item-count">{newsDataCount} مطلب</span>
                   </Col>
                 </Row>
               </div>
             </Col>
           </Row>
           <Row>
-            <News />
+            {newsFilteredData.map((item) => {
+              return (
+                <Col lg={6} md={12} sm={12} key={item._id}>
+                  <NewsItem news={item} />
+                </Col>
+              );
+            })}
           </Row>
         </Container>
 
