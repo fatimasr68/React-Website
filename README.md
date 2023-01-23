@@ -1,5 +1,7 @@
 * [Here is the link to the website](https://alfawinner.sepehracademy.ir/)
 
+* [link to the figma](https://www.figma.com/file/zY7YqfxgTkvusNXMjORZSU/Alpha-Website?node-id=0%3A1&t=YJaCjTogDckdnRRO-1)
+
 # UI Design with Figma
 
   <table style="padding: 0; border=0;">
