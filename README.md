@@ -1,9 +1,8 @@
+# React Website
+This website is built with React and several other technologies. It is designed to be a modern, responsive, and user-friendly website.
 * [Here is the link to the website](https://alfawinner.sepehracademy.ir/)
 
 * [link to the figma](https://www.figma.com/file/zY7YqfxgTkvusNXMjORZSU/Alpha-Website?node-id=0%3A1&t=YJaCjTogDckdnRRO-1)
-
-# React Website
-This website is built with React and several other technologies. It is designed to be a modern, responsive, and user-friendly website.
 
 ## Technologies Used
 The following technologies are used in this React website: 
@@ -23,10 +22,8 @@ This website includes the following features:
 * Customizable forms with validation using Formik and Yup libraries  
 * Slider using Swiper library to showcase images or content  
 
- ## Conclusion  
-This React website is built using modern technologies to provide a user-friendly experience across all devices. It includes features such as responsive design, easy navigation, customizable forms with validation, and a slider to showcase images or content.
 
-# UI Design with Figma
+## UI Design with Figma
 
   <table style="padding: 0; border=0;">
   <tr style="padding: 10; border=0;">
@@ -47,3 +44,5 @@ This React website is built using modern technologies to provide a user-friendly
   </tr>
  </table>
 
+ ## Conclusion  
+This React website is built using modern technologies to provide a user-friendly experience across all devices. It includes features such as responsive design, easy navigation, customizable forms with validation, and a slider to showcase images or content.
