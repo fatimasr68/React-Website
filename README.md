@@ -7,13 +7,14 @@ This website is built with React and several other technologies. It is designed 
 ## Technologies Used
 The following technologies are used in this React website: 
 * [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
-* [FontAwesome](https://fontawesome.com/) - Icon library for web developers
-* [Swiper](http://idangero.us/swiper/) - Mobile touch slider and framework with hardware accelerated transitions  
+* [Formik](https://jaredpalmer.com/formik/) - Library for building forms in React 
+* [Yup](https://github.com/jquense/yup) - Object schema validation library 
 * [React Bootstrap](https://react-bootstrap.github.io/) - Front-end framework for building responsive, mobile-first websites 
 * [Styled Components](https://styled-components.com/) - Visual primitives for the component age 
 * [React Toastify](https://github.com/fkhadra/react-toastify) - Library for displaying toast notifications in React apps 
-* [Formik](https://jaredpalmer.com/formik/) - Library for building forms in React 
-* [Yup](https://github.com/jquense/yup) - Object schema validation library 
+* [FontAwesome](https://fontawesome.com/) - Icon library for web developers
+* [Swiper](http://idangero.us/swiper/) - Mobile touch slider and framework with hardware accelerated transitions  
+
 
  ## Features 
 This website includes the following features: 
