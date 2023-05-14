@@ -35,7 +35,7 @@ const Header = () => {
   let classHide = isSticky ? "is-sticky" : "";
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="top-header" variant="light">
         <div className="section-container">
           <Row className="align-items-center">
@@ -192,7 +192,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
