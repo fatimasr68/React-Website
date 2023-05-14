@@ -32,6 +32,7 @@ const CourseItem = ({ course }) => {
         </Link>
 
         <Card.Body className="px-4 pb-4">
+        <header>
           <div className="d-flex justify-content-between align-items-center">
             <Card.Text as="span">
               <FontAwesomeIcon
@@ -52,7 +53,7 @@ const CourseItem = ({ course }) => {
             </Card.Text>
           </div>
 
-          <header>
+          
             <Link to={`/course/${course._id}`}>
               <Card.Title as="h3" className="mt-4 mb-4">
                 {course.courseTitle}
