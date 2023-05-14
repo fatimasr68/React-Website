@@ -17,13 +17,13 @@ const NewsItem = ({ news }) => {
   return (
     <>
       <Card className="news-item my-3 p-3">
-        <div className="d-lg-flex d-sm-flex justify-content-between">
+        <article className="d-lg-flex d-sm-flex justify-content-between">
           <Link to={`/news/${news._id}`}>
             <Card.Img className="w-sm-100" src={news.newsImage} width="100" />
           </Link>
 
           <Card.Body className="d-grid py-1">
-            <div className="d-flex justify-content-between">
+            <header className="d-flex justify-content-between">
               <Link to={`/news/${news._id}`}>
                 <Card.Title as="h3" className="">
                   {stringShorter(news.newsTitle, 30)}  
@@ -33,13 +33,13 @@ const NewsItem = ({ news }) => {
                 <FontAwesomeIcon icon={faCalendar} className="ms-1" />
                 {news.newsDate}
               </Card.Text>
-            </div>
+            </header>
 
             <Card.Text className="news-desc pt-3 pb-3">
               {stringShorter(news.newsDescription, 80)}
             </Card.Text>
 
-            <div className="d-flex justify-content-between align-items-center">
+            <footer className="d-flex justify-content-between align-items-center">
               <Card.Text as="span">
                 <FontAwesomeIcon icon={faShareAlt} className="ms-3 me-1" />
                 <FontAwesomeIcon
@@ -55,9 +55,9 @@ const NewsItem = ({ news }) => {
                 </Card.Text>
                 <FontAwesomeIcon icon={faArrowLeft} className="more" />
               </Link>
-            </div>
+            </footer>
           </Card.Body>
-        </div>
+        </article>
       </Card>
     </>
   );
