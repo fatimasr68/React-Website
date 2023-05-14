@@ -18,12 +18,11 @@ import {
 
 const Landing = () => {
   return (
-    <>
-      <main className="py-30">
-        
-        <Hero />
-        <Counter />
+    <div className="py-30">
+      <Hero />
+      <Counter />
 
+      <main>
         <div className="section-container services-area">
           <Container>
             <Row>
@@ -234,59 +233,58 @@ const Landing = () => {
             </div>
           </div>
         </div>
-
-        <div className="section-container suggestion-area">
-          <Container>
-            <Row>
-              <Col lg={6} md={12} sm={12}>
-                <div className="suggestion-right-section mb-5 ps-lg-5 p-sm-0">
-                  <div className="suggestion-form">
-                    <div className="top">
-                      <h3>پیشنهادات و انتقادات</h3>
-                    </div>
-                    <form className="suggestion-form-content">
-                      <Col className="text-center">
-                        <Col lg={12}>
-                          <input type="text" placeholder="ایمیل شما" />
-                        </Col>
-                        <Col lg={12}>
-                          <input type="text" placeholder="عنوان پیام" />
-                        </Col>
-                        <Col lg={12}>
-                          <input type="textarea" placeholder="متن پیام" />
-                        </Col>
-                        <Col lg={12}>
-                          <button type="submit" className="default-btn">
-                            ارسال پیشنهاد
-                          </button>
-                        </Col>
-                      </Col>
-                    </form>
-                  </div>
-                </div>
-              </Col>
-
-              <Col
-                lg={6}
-                md={12}
-                sm={12}
-                className="suggestion-left-section mb-5 text-lg-start text-center"
-              >
-                <div className="play-btn-area">
-                  <a href="https://www.aparat.com/" className="play-btn">
-                    <i className="fa fa-play"></i>
-                  </a>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-
-        <div className="newsletter-area section-container">
-          <Newsletter />
-        </div>
       </main>
-    </>
+      <div className="section-container suggestion-area">
+        <Container>
+          <Row>
+            <Col lg={6} md={12} sm={12}>
+              <div className="suggestion-right-section mb-5 ps-lg-5 p-sm-0">
+                <div className="suggestion-form">
+                  <div className="top">
+                    <h3>پیشنهادات و انتقادات</h3>
+                  </div>
+                  <form className="suggestion-form-content">
+                    <Col className="text-center">
+                      <Col lg={12}>
+                        <input type="text" placeholder="ایمیل شما" />
+                      </Col>
+                      <Col lg={12}>
+                        <input type="text" placeholder="عنوان پیام" />
+                      </Col>
+                      <Col lg={12}>
+                        <input type="textarea" placeholder="متن پیام" />
+                      </Col>
+                      <Col lg={12}>
+                        <button type="submit" className="default-btn">
+                          ارسال پیشنهاد
+                        </button>
+                      </Col>
+                    </Col>
+                  </form>
+                </div>
+              </div>
+            </Col>
+
+            <Col
+              lg={6}
+              md={12}
+              sm={12}
+              className="suggestion-left-section mb-5 text-lg-start text-center"
+            >
+              <div className="play-btn-area">
+                <a href="https://www.aparat.com/" className="play-btn">
+                  <i className="fa fa-play"></i>
+                </a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div className="newsletter-area section-container">
+        <Newsletter />
+      </div>
+    </div>
   );
 };
 
