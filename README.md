@@ -1,7 +1,7 @@
 # React Website
 This website is built with React and several other technologies. It is designed to be a modern, responsive, and user-friendly website.
 * [Here is the link to the website](https://alfawinner.sepehracademy.ir/) 
-* [or](https://fatimasr68.github.io/React-Website/)
+* [If the above link doesn't open, click it](https://fatimasr68.github.io/React-Website/)
 
 * [link to the figma](https://www.figma.com/file/zY7YqfxgTkvusNXMjORZSU/Alpha-Website?node-id=0%3A1&t=YJaCjTogDckdnRRO-1)
 
