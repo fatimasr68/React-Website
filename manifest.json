@@ -1,6 +1,6 @@
 {
-  "short_name": "ReactSite",
-  "name": "My React PWA Website",
+  "short_name": "Alpha",
+  "name": "Alpha",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
