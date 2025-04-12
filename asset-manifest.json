@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Website/static/css/main.60e410f3.css",
-    "main.js": "/React-Website/static/js/main.cf796cac.js",
+    "main.css": "/React-Website/static/css/main.a58361f2.css",
+    "main.js": "/React-Website/static/js/main.7a13271e.js",
     "static/js/483.c26e9f0d.chunk.js": "/React-Website/static/js/483.c26e9f0d.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Website/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/React-Website/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -45,14 +45,14 @@
     "static/media/bg-page404.png": "/React-Website/static/media/bg-page404.200cb5bdfddeef9da907.png",
     "static/media/services-Item-bg.png": "/React-Website/static/media/services-Item-bg.3956b3abfadf5f0d3e97.png",
     "static/media/bg-shape1.png": "/React-Website/static/media/bg-shape1.9c63765e75080ac53e06.png",
-    "static/media/vector-login2.svg": "/React-Website/static/media/vector-login2.14653124ff38ccc9d6b1.svg",
+    "static/media/vector-login2.svg": "/React-Website/static/media/vector-login2.1c8caa8edf53f8124199.svg",
     "index.html": "/React-Website/index.html",
-    "main.60e410f3.css.map": "/React-Website/static/css/main.60e410f3.css.map",
-    "main.cf796cac.js.map": "/React-Website/static/js/main.cf796cac.js.map",
+    "main.a58361f2.css.map": "/React-Website/static/css/main.a58361f2.css.map",
+    "main.7a13271e.js.map": "/React-Website/static/js/main.7a13271e.js.map",
     "483.c26e9f0d.chunk.js.map": "/React-Website/static/js/483.c26e9f0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60e410f3.css",
-    "static/js/main.cf796cac.js"
+    "static/css/main.a58361f2.css",
+    "static/js/main.7a13271e.js"
   ]
 }
