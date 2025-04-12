@@ -3,17 +3,17 @@
   "name": "My React PWA Website",
   "icons": [
     {
-      "src": "icons/logo-1.png",
+      "src": "icons/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/logo-2.png",
-      "type": "image/png",
+      "src": "icons/icon-512x512.png",
+      "type": "image/icon-512x512.png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "\"/React-Website/index.html\"",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
